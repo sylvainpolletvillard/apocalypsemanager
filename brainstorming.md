@@ -28,6 +28,9 @@ vue manager globale: countdown, le % de chance de survie, un accès à des sous 
 panne énergétique, émeutes qui bloquent l'accès à l'eau/bouffe, attaques militaires
 flash news réguliers
 
+1 mois avant la chute de la météorite
+30 jours = 30 minutes temps réel ?
+
 # nom ?
 
 Apocalypse Manager 2018 (DLC not included)
@@ -37,3 +40,15 @@ Apocalypse Manager 2018 (DLC not included)
 web
 pas de canvas / webgl
 mobile friendly
+vuejs
+
+# ressources
+
+bouffe
+eau
+carburant
+métaux
+outils
+batteries
+composants
+
