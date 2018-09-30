@@ -237,8 +237,8 @@ export const newGame = () => {
                         status: "idle"
                     }
                 ],
-                researchTimeFactor: 1.5,
-                missionTimeFactor: 1.5,
+                researchTimeFactor: 0.75,
+                missionTimeFactor: 0.75,
                 currentEpoch: 2,
                 timeBetweenEpochs: 1000 * 60 * 5 // 5 minutes
             })
@@ -266,8 +266,8 @@ export const newGame = () => {
                         status: "idle"
                     }
                 ],
-                researchTimeFactor: 2,
-                missionTimeFactor: 2,
+                researchTimeFactor: 0.5,
+                missionTimeFactor: 0.5,
                 currentEpoch: 3,
                 timeBetweenEpochs: 1000 * 60 * 5 // 5 minutes
             })
@@ -336,7 +336,7 @@ export const calcScore = () => {
         ressources: Object.entries(state.ressources).reduce(
             (total, [res, amount]) => total + amount * (res === "plutonium" ? 5 : 1), 0
         ),
-        time: Math.ceil(state.timeLeft / 1000)
+        time: Math.ceil((state.timeLeft || 0) / 1000)
     }
 
     score.total = score.victory + score.tech + score.ressources + score.time;
